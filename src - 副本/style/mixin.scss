@@ -1,0 +1,27 @@
+@mixin self-center($pos: absolute) {
+  position: $pos;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin self-fill($pos: absolute) {
+  position: $pos;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+@mixin to-flex($justify-content: space-between, $align-content: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-content: $align-content;
+}
+
+// 上下左右的内边距
+@mixin box-show-padding($padA:0.5rem, $padB:0.5rem) {
+  box-sizing: border-box;
+  padding: $padA $padB;
+}

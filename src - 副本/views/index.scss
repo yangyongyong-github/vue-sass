@@ -1,0 +1,40 @@
+.main {
+    width: 100%;
+    min-width: 1200px;
+
+    ul {
+        width: 100%;
+        list-style-type: none;
+        /* 流式布局 */
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+
+        li {
+            flex: 0 0 150px;
+            height: 130px;
+            border-radius: 30px;
+            background-color: rgb(242, 241, 241);
+            padding: 5px 20px;
+            margin: 25px 0 0 25px;
+
+            .image {
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 100px;
+
+                }
+            }
+
+            .title {
+                margin-top: 8px;
+                /* 文字溢出隐藏 */
+                width: 150px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+}
